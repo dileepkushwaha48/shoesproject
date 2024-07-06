@@ -1,0 +1,220 @@
+* {
+    font-family: iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 60%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #000;
+    font-weight: 500;
+}
+
+header .navbar a {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 2rem;
+}
+
+header .navbar a:hover {
+    color: orangered;
+}
+
+header .icons a {
+    font-size: 2rem;
+    color: #000;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: orangered;
+}
+
+
+/* main-container */
+
+
+
+.main-container {
+    margin: 7.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide container into two columns */
+    justify-content: center; /* Center the content */
+    align-items: center;
+    gap: 4rem; /* Added gap between the images and details */
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Adjusted gap between images */
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    width: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.images img:hover {
+    transform: scale(1.1); /* Added scale effect on hover to zoom in */
+}
+
+.details {
+    padding: 1rem; /* Added padding to the details section */
+}
+
+.details h3 {
+    font-size: 18px; /* Adjusted font size */
+}
+
+.details p {
+    color: black;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    
+}
+
+.hover-border {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.hover-border:hover {
+    border-color: black;
+}
+
+.fa-star {
+    color: green;
+}
+
+.price {
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.taxes {
+    color: green;
+    text-transform: lowercase;
+    margin: 0.2rem;
+}
+
+.circle-button {
+    margin: 2rem 0; /* Adjusted margin */
+}
+
+#circle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+#circle:hover {
+    background-color: #ccc;
+}
+
+.bag{
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    background-color: rgb(235, 17, 217);
+    border-radius: 5px;
+    color: #333;
+    font-size: 2rem;
+
+}
+
+#hover-border {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #333;
+    font-size: 2rem;
+}
+
+#hover-border:hover {
+    border-color: black;
+}
+
+/* css for product details */
+
+.product-details{
+    margin: 10px;
+display: inline;
+}
+
+.pr-heading1{
+    font-size: 2.5rem;
+    /* margin: 2px; */
+    font-weight: bolder;
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+
+.product-details p{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+
+/* similar-type-product for css */
+
